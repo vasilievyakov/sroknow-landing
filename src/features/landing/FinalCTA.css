@@ -1,0 +1,175 @@
+
+.final-cta-inner {
+  padding-bottom: 24px;
+}
+
+.cta-title {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--neutral);
+}
+
+.cta-subtitle {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 18px;
+  color: #3c3f44;
+  max-width: 640px;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(260px, 1.3fr);
+  gap: 22px;
+}
+
+.cta-form {
+  background-color: #ffffff;
+  border-radius: var(--radius-xl);
+  border: 1px solid #e4e6ea;
+  box-shadow: 0 14px 40px rgba(10, 24, 40, 0.1);
+  padding: 16px 16px 14px;
+}
+
+.cta-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cta-field label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #7b8188;
+}
+
+.cta-field input,
+.cta-field textarea {
+  padding: 9px 10px;
+  border-radius: 10px;
+  border: 1px solid #d7dbe2;
+  font-size: 13px;
+  outline: none;
+  transition: all var(--transition-fast);
+  font-family: inherit;
+  resize: vertical;
+}
+
+.cta-field input:focus,
+.cta-field textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(0, 76, 126, 0.14);
+}
+
+.cta-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.cta-note {
+  margin: 4px 0 0;
+  font-size: 10px;
+  color: #8b8f96;
+}
+
+.cta-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+  color: #4a4d52;
+}
+
+.cta-pill {
+  align-self: flex-start;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #f5f3ed;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #7b5d2a;
+}
+
+.cta-contact {
+  padding: 12px 12px 10px;
+  border-radius: var(--radius-xl);
+  background-color: #ffffff;
+  border: 1px solid #e4e6ea;
+  box-shadow: 0 10px 28px rgba(10, 24, 40, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cta-contact h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--neutral);
+}
+
+.cta-contact ul {
+  margin: 2px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cta-contact li {
+  font-size: 12px;
+  color: #4a4d52;
+}
+
+.cta-email {
+  margin: 0;
+  font-size: 12px;
+  color: #7b8188;
+}
+
+.cta-email span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .cta-subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-form {
+    padding: 14px 12px 12px;
+  }
+
+  .cta-row {
+    grid-template-columns: 1fr;
+  }
+}

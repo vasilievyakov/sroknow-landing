@@ -1,5 +1,3 @@
-
-import React from 'react';
 import './App.css';
 import { Hero } from './features/landing/Hero';
 import { Problem } from './features/landing/Problem';
